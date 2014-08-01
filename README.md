@@ -8,7 +8,7 @@ go get github.com/Cergoo/pkgCaptchaGen
 
 Example
 -------
-[Image](https://github.com/Cergoo/pkgCaptchaGen/example/1.png)
+![Image](https://github.com/Cergoo/pkgCaptchaGen/example/1.png)
 
 Usage
 -----
