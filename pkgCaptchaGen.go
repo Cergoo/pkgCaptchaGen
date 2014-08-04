@@ -9,7 +9,7 @@ package pkgCaptchaGen
 import (
 	"bytes"
 	"github.com/Cergoo/pkgCaptchaGen/imageUtil"
-	"gol/err"
+	"github.com/Cergoo/gol/err"
 	"image"
 	"image/png"
 	"io/ioutil"
