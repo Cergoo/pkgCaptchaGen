@@ -15,10 +15,7 @@ func get(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Cache-Control", "no-store, no-cache")
 	img, txt := captcha.Gen()
 	pngbase64 := base64.StdEncoding.EncodeToString(img.Bytes())
-
-	fmt.Fprint(w, `<!doctype html>
-<meta charset=utf-8>
-<html lang=ru><head></head><body><div>`, "<img src=\"data:image/png;base64,", pngbase64, "\">", txt, "</div></body></html>")
+	fmt.Fprint(w, `<!doctype html><meta charset=utf-8><html lang=ru><head></head><body><div>`, "<img src=\"data:image/png;base64,", pngbase64, "\">", txt, "</div></body></html>")
 }
 
 func main() {
