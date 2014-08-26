@@ -1,9 +1,7 @@
-/*
-  Image utils pkg
-  (c)	2013-2014 Cergoo
-  under terms of ISC license
-*/
+// (c)	2013-2014 Cergoo
+// under terms of ISC license
 
+// Image utils pkg
 package imageUtil
 
 import (
@@ -18,6 +16,7 @@ type (
 	}
 )
 
+// Split image
 func Split(img image.Image) (parts []*image.RGBA, hight int) {
 	var (
 		line  bool

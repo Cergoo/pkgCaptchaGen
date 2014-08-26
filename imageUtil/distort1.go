@@ -1,9 +1,7 @@
-/*
-  Image utils pkg
-  (c)	2013-2014 Cergoo
-  under terms of ISC license
-*/
+// (c)	2013-2014 Cergoo
+// under terms of ISC license
 
+// Image utils pkg
 package imageUtil
 
 import (
@@ -13,6 +11,7 @@ import (
 )
 
 type (
+	// IDistor interface implementation
 	TDistort1 struct {
 		liney, delta int
 		part1        struct{ d1, d2 int }
@@ -20,6 +19,7 @@ type (
 	}
 )
 
+// Random init distort struct
 func (t *TDistort1) Init() {
 	t.liney = 20 + rand.Intn(10)
 	t.delta = 10
@@ -35,6 +35,7 @@ func (t *TDistort1) Init() {
 	}
 }
 
+// Distort img
 func (t *TDistort1) Distort(src, dst *image.RGBA, dx, dy int) {
 	var (
 		dstx float64

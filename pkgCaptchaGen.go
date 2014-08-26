@@ -1,15 +1,13 @@
-/*
-	captcha generate pkg
-	(c) 2014 Cergoo
-	under terms of ISC license
-*/
+// (c) 2014 Cergoo
+// under terms of ISC license
 
+// 	Captcha img generate pkg
 package pkgCaptchaGen
 
 import (
 	"bytes"
-	"github.com/Cergoo/pkgCaptchaGen/imageUtil"
 	"github.com/Cergoo/gol/err"
+	"github.com/Cergoo/pkgCaptchaGen/imageUtil"
 	"image"
 	"image/png"
 	"io/ioutil"
