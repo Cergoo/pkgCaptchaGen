@@ -1,6 +1,6 @@
 pkgCaptchaGen
 ======
-Captcha .png image fast generate pkg [![GoDoc](https://godoc.org/github.com/Cergoo/pkgCaptchaGen/imageUtil?status.svg)](https://godoc.org/github.com/Cergoo/pkgCaptchaGen/imageUtil)  
+Captcha .png image fast generate pkg.  [![GoDoc](https://godoc.org/github.com/Cergoo/pkgCaptchaGen?status.svg)](https://godoc.org/github.com/Cergoo/pkgCaptchaGen)  
   
 Install
 -------
