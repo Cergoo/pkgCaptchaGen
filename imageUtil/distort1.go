@@ -1,7 +1,7 @@
 // (c)	2013-2014 Cergoo
 // under terms of ISC license
 
-// Package imageUtil
+// Package imageUtil it's util
 package imageUtil
 
 import (
@@ -11,7 +11,7 @@ import (
 )
 
 type (
-	// IDistor interface implementation
+	// TDistort1 it's IDistor interface implementation
 	TDistort1 struct {
 		liney, delta int
 		part1        struct{ d1, d2 int }
