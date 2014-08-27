@@ -1,7 +1,6 @@
 // (c)	2013-2014 Cergoo
 // under terms of ISC license
 
-// Image utils pkg
 package imageUtil
 
 import (
@@ -10,13 +9,14 @@ import (
 )
 
 type (
+  // IDistort distorter image interface 
 	IDistort interface {
 		Init()
 		Distort(src, dst *image.RGBA, dx, dy int)
 	}
 )
 
-// Split image
+// Split split image
 func Split(img image.Image) (parts []*image.RGBA, hight int) {
 	var (
 		line  bool

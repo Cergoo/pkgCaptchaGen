@@ -1,7 +1,7 @@
 // (c)	2013-2014 Cergoo
 // under terms of ISC license
 
-// Image utils pkg
+// Package imageUtil
 package imageUtil
 
 import (
@@ -19,7 +19,7 @@ type (
 	}
 )
 
-// Random init distort struct
+// Init init random value distort
 func (t *TDistort1) Init() {
 	t.liney = 20 + rand.Intn(10)
 	t.delta = 10
@@ -35,7 +35,7 @@ func (t *TDistort1) Init() {
 	}
 }
 
-// Distort img
+// Distort distort img
 func (t *TDistort1) Distort(src, dst *image.RGBA, dx, dy int) {
 	var (
 		dstx float64

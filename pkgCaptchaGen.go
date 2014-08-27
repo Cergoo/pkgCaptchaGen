@@ -1,7 +1,7 @@
 // (c) 2014 Cergoo
 // under terms of ISC license
 
-// 	Captcha img generate pkg
+// Package pkgCaptchaGen it's .png image generator implementation
 package pkgCaptchaGen
 
 import (
@@ -17,6 +17,7 @@ import (
 )
 
 type (
+  // TCaptchaGen main struct 
 	TCaptchaGen struct {
 		alphabetChars    string             // chars
 		alphabetImages   []*image.RGBA      // images
@@ -27,7 +28,7 @@ type (
 	}
 )
 
-// Constructor
+// New constructor of a new capcha generator
 func New(pathtofile string, length uint8, width int) *TCaptchaGen {
 	var (
 		e          error
@@ -53,11 +54,11 @@ func New(pathtofile string, length uint8, width int) *TCaptchaGen {
 	return captchaGen
 }
 
-// Gen new captcha
+// Gen gen new captcha
 func (t *TCaptchaGen) Gen() (bytes.Buffer, string) {
 	var (
 		r        int
-		currentx int = 0
+		currentx int
 		b        bytes.Buffer
 	)
 
